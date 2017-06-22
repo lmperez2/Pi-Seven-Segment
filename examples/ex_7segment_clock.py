@@ -27,9 +27,14 @@ while(True):
   else:
     hour = hour % 12
 
+  A = int(hour / 10)
+
+  if A == 0:
+    A = ' '
+
   segment.clear()
   # Set hours
-  segment.set_digit(0, int(hour / 10))     # Tens
+  segment.set_digit(0, A)     # Tens
   segment.set_digit(1, hour % 10)          # Ones
   # Set minutes
   segment.set_digit(2, int(minute / 10))   # Tens
