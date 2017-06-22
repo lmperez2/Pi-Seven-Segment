@@ -18,9 +18,14 @@ print "Press CTRL+Z to exit"
 # Continually update the time on a 4 char, 7-segment display
 while(True):
   now = datetime.datetime.now()
-  hour = now.hour
+  hour = now.hour 
   minute = now.minute
   second = now.second
+
+  if (hour == 24)
+    hour = 12 
+  else
+    hour = hour % 12
 
   segment.clear()
   # Set hours
