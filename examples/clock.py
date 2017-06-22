@@ -31,7 +31,7 @@ while(True):
 
   if A == 0:
     A = ' '
-    segment.set_brightness(2)
+    segment.set_brightness(0)
   else:
     segment.set_brightness(2)
 
