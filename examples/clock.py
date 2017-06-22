@@ -22,7 +22,7 @@ while(True):
   minute = now.minute
   second = now.second
 
-  if hour >= 18 and minutes > 28 or hour < 7:
+  if hour >= 18 and minute > 30 or hour < 7:
     segment.set_brightness(0)
   else:
     segment.set_brightness(5)
