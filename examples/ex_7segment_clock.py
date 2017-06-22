@@ -31,9 +31,9 @@ while(True):
 
   if A == 0:
     A = ' '
-    segment.set_brightness(10)
+    segment.set_brightness(2)
   else:
-    segment.set_brightness(5)
+    segment.set_brightness(2)
 
   segment.clear()
   # Set hours
