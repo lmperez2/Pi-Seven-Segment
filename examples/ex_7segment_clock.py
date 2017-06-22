@@ -22,9 +22,9 @@ while(True):
   minute = now.minute
   second = now.second
 
-  if (hour == 24)
+  if hour == 24:
     hour = 12 
-  else
+  else:
     hour = hour % 12
 
   segment.clear()
