@@ -22,20 +22,20 @@ while(True):
   minute = now.minute
   second = now.second
 
+  if hour >= 22 or hour < 7:
+    segment.set_brightness(0)
+  else:
+    segment.set_brightness(5)
+  
   if hour == 24:
     hour = 12 
   else:
     hour = hour % 12
 
   A = int(hour / 10)
-
+  
   if A == 0:
     A = ' '
-    
-  if hour >= 22 or hour < 7:
-    segment.set_brightness(0)
-  else:
-    segment.set_brightness(5)
 
   segment.clear()
   # Set hours
